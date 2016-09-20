@@ -39,6 +39,30 @@ nav {
     height: 100vh;
 }
 
+.logotype {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 32px;
+    color: #179446;
+}
+
+.btn-green {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3x;
+	border: 2px solid #179446;
+	cursor: pointer;
+	color:#179446;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 16px;
+	padding: 14px 24px;
+    transition: background-color 1s ease;
+}
+
+
+.btn-green:hover {
+    background-color:#179446;
+    color: #FFF;
+}
 
 @media (max-width: 767px) {
 
