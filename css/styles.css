@@ -5,6 +5,7 @@
 body {
     background-color: black;
     color: antiquewhite;
+    
 }
 
 header {
@@ -28,7 +29,6 @@ nav {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 .header-image {
@@ -37,6 +37,9 @@ nav {
     background-position: top center;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .logotype {
@@ -58,10 +61,35 @@ nav {
     transition: background-color 1s ease;
 }
 
+.intro-content {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 32px;
+    width: 50%;
+}
+
+.intro-content h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 28px;
+    width: 80%;
+}
+
+.intro-content h1:after {
+    background-color: #179446;
+    content: "";
+    display: block;
+    width: 1.875rem;
+    height: .3125rem;
+    margin-top: 25px;
+}
+
+section {
+    width: 1170px;
+    margin: 0 auto;
+}
 
 .btn-green:hover {
     background-color:#179446;
-    color: #FFF;
+    color: antiquewhite;
 }
 
 @media (max-width: 767px) {
