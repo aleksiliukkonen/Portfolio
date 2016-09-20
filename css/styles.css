@@ -32,11 +32,12 @@ nav {
 }
 
 .header-image {
-    background: url('../img/bg.jpg') no-repeat top center;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
     height: 100vh;
 }
-
 
 
 @media (max-width: 767px) {
