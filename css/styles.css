@@ -13,12 +13,13 @@ header {
 }
 
 nav {
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.5);
     height: 100px; 
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
+    position: fixed;
 }
 
 .top-bar {
@@ -31,15 +32,15 @@ nav {
     align-items: center;
 }
 
-.header-image {
+#header-image {
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     height: 100vh;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    background-attachment: fixed;
 }
 
 .logotype {
@@ -52,13 +53,18 @@ nav {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3x;
-	border: 2px solid #179446;
+	background-color: #179446;
 	cursor: pointer;
-	color:#179446;
+	color:antiquewhite;
 	font-family: 'Rubik Mono One', sans-serif;
 	font-size: 16px;
 	padding: 14px 24px;
     transition: background-color 1s ease;
+}
+
+.btn-green:hover {
+    background-color:#179446;
+    color: antiquewhite;
 }
 
 .intro-content {
@@ -82,15 +88,17 @@ nav {
     margin-top: 25px;
 }
 
+section.introduction {
+    width: 1170px;
+    margin: 0 auto;
+}
+
 section {
     width: 1170px;
     margin: 0 auto;
 }
 
-.btn-green:hover {
-    background-color:#179446;
-    color: antiquewhite;
-}
+
 
 @media (max-width: 767px) {
 
