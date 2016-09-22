@@ -3,9 +3,13 @@
 }
 
 body {
-    background-color: black;
+    background-color: #111;
     color: antiquewhite;
 
+}
+
+:root {
+    font-size: 16px;
 }
 
 header {
@@ -19,13 +23,14 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
+    position: fixed;
 }
 
 .top-bar {
     display: flex;
     max-width: 1170px;
     width: 100%;
-    height: 100px; 
+    height: 6.25em; 
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -44,20 +49,20 @@ nav {
 
 .logotype {
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     color: #179446;
 }
 
 .btn-green {
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3x;
+    font-size: 1rem;
+	-moz-border-radius: 0.1855em;
+	-webkit-border-radius: 0.1855em;
+	border-radius: 0.1855em;
 	background-color: #179446;
 	cursor: pointer;
 	color:antiquewhite;
 	font-family: 'Rubik Mono One', sans-serif;
-	font-size: 16px;
-	padding: 14px 24px;
+	padding: 0.875em 1.5em;
     transition: background-color 1s ease;
 }
 
@@ -69,7 +74,7 @@ nav {
 .intro-content {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 2.625rem;
     width: 50%;
 }
 
@@ -79,7 +84,7 @@ h1, h2 {
 }
 
 .intro-content h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     width: 80%;
     margin: 0;
     padding: 0;
@@ -112,9 +117,40 @@ section {
     margin: 0 auto;
 }
 
+@media (max-width: 1170px) {
 
+.top-bar {
+    padding: 0 25px;
+    transition: 0.5s ease;
+}
+
+
+.intro-content {
+    padding-left: 25px;
+}
 
 @media (max-width: 767px) {
+
+:root {
+    font-size: 12px;
+}
+
+.intro-content {
+    text-align: center;
+    width: auto;
+    transition: all 1s ease-in-out;
+    padding: 0;
+}
+
+.intro-content h1:after {
+    margin: 35px auto;
+}
+
+.intro-content h2 {
+    width:  auto;
+}
+
+
 
 
 }
