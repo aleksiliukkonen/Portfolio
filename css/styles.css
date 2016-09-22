@@ -18,7 +18,6 @@ header {
 
 nav {
     background-color: rgba(17, 17, 17, 0.5);
-    height: 100px; 
     position: absolute;
     width: 100%;
     top: 0;
@@ -125,6 +124,8 @@ section {
 }
 
 
+
+
 .intro-content {
     padding-left: 25px;
 }
@@ -135,6 +136,7 @@ section {
     font-size: 12px;
 }
 
+
 .intro-content {
     text-align: center;
     width: auto;
@@ -143,11 +145,12 @@ section {
 }
 
 .intro-content h1:after {
-    margin: 35px auto;
+    margin: 15px auto;
 }
 
 .intro-content h2 {
     width:  auto;
+    margin-top: 25px;
 }
 
 
