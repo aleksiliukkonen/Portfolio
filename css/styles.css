@@ -1,159 +1,116 @@
 * {
-    box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-    background-color: #111;
-    color: antiquewhite;
-
-}
+  background-color: #111;
+  color: antiquewhite; }
 
 :root {
-    font-size: 16px;
-}
+  font-size: 16px; }
 
 header {
-    position: relative;
-}
+  position: relative; }
 
 nav {
-    background-color: rgba(17, 17, 17, 0.5);
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-}
+  background-color: rgba(17, 17, 17, 0.5);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed; }
 
 .top-bar {
-    display: flex;
-    max-width: 1170px;
-    width: 100%;
-    height: 6.25em; 
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-}
+  display: flex;
+  max-width: 1170px;
+  width: 100%;
+  height: 6.25em;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center; }
 
 #header-image {
-    background-image: url('../img/bg.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-attachment: fixed;
-}
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed; }
 
 .logotype {
-    font-family: 'Rubik Mono One', sans-serif;
-    font-size: 2rem;
-    color: #179446;
-}
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 2rem;
+  color: #179446; }
 
 .btn-green {
-    font-size: 1rem;
-	-moz-border-radius: 0.1855em;
-	-webkit-border-radius: 0.1855em;
-	border-radius: 0.1855em;
-	background-color: #179446;
-	cursor: pointer;
-	color:antiquewhite;
-	font-family: 'Rubik Mono One', sans-serif;
-	padding: 0.875em 1.5em;
-    transition: background-color 1s ease;
-}
-
-.btn-green:hover {
-    background-color:#179446;
-    color: antiquewhite;
-}
+  font-size: 1rem;
+  -moz-border-radius: 0.1855em;
+  -webkit-border-radius: 0.1855em;
+  border-radius: 0.1855em;
+  background-color: #179446;
+  cursor: pointer;
+  font-family: 'Rubik Mono One', sans-serif;
+  padding: 0.875em 1.5em;
+  transition: background-color 1s ease; }
+  .btn-green:hover {
+    background-color: #137a39;
+    color: antiquewhite; }
 
 .intro-content {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.625rem;
-    width: 50%;
-}
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.625rem;
+  width: 50%; }
 
 h1, h2 {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 .intro-content h2 {
-    font-size: 1.75rem;
-    width: 80%;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 4px;
-}
+  font-size: 1.75rem;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 4px; }
 
 .intro-content h1:after {
-    background-color: #179446;
-    content: "";
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin: 35px 0;
-}
+  background-color: #179446;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin: 35px 0; }
 
 section.introduction {
-    width: 1170px;
-    margin: 0 auto;
-}
-
+  width: 1170px;
+  margin: 0 auto; }
 
 section {
-    padding: 0;
-    margin: 0;
-}
-
+  padding: 0;
+  margin: 0; }
 
 section {
-    max-width: 1170px;
-    margin: 0 auto;
-}
+  max-width: 1170px;
+  margin: 0 auto; }
 
 @media (max-width: 1170px) {
-
-.top-bar {
+  .top-bar {
     padding: 0 25px;
-    transition: 0.5s ease;
-}
-
-
-
-
-.intro-content {
-    padding-left: 25px;
-}
+    transition: 0.5s ease; }
+  .intro-content {
+    padding-left: 25px; } }
 
 @media (max-width: 767px) {
-
-:root {
-    font-size: 12px;
-}
-
-
-.intro-content {
+  :root {
+    font-size: 12px; }
+  .intro-content {
     text-align: center;
     width: auto;
     transition: all 1s ease-in-out;
-    padding: 0;
-}
-
-.intro-content h1:after {
-    margin: 15px auto;
-}
-
-.intro-content h2 {
-    width:  auto;
-    margin-top: 25px;
-}
-
-
-
-
-}
+    padding: 0; }
+  .intro-content h1:after {
+    margin: 15px auto; }
+  .intro-content h2 {
+    width: auto;
+    margin-top: 25px; } }
