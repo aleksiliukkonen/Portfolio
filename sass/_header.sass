@@ -9,6 +9,10 @@ a
 	color: $mainGreen
 	text-decoration: none
 
+h1, h2 
+	margin: 0
+	padding: 0
+
 :root 
 	font-size: 16px
 
@@ -32,7 +36,7 @@ nav
 	justify-content: space-between
 	align-items: center
 
-	&__logotype 
+	&__logo 
 		font-family: 'Rubik Mono One', sans-serif
 		font-size: 2rem
 		color: $mainGreen
@@ -53,7 +57,7 @@ nav
 			background-color: darken($mainGreen, 6%)
 			color: antiquewhite
 
-.header-image 
+.hero 
 	background-image: url('../img/bg.jpg')
 	background-repeat: no-repeat
 	background-position: top center
@@ -63,24 +67,19 @@ nav
 	align-items: center
 	background-attachment: fixed
 		
-.intro-content 
+.hero__items 
 	font-family: 'Montserrat', sans-serif
 	text-transform: uppercase
 	font-size: 2.625rem
 	width: 50%
 
-h1, h2 
-	margin: 0
-	padding: 0
-
-.intro-content h2 
+.hero__paragraph
 	font-size: 1.75rem
-	width: 80%
 	margin: 0
 	padding: 0
 	letter-spacing: 4px
 
-.intro-content h1:after 
+.hero__heading:after 
 	background-color: $mainGreen
 	content: ""
 	display: block
@@ -88,13 +87,9 @@ h1, h2
 	height: 5px
 	margin: 35px 0
 
-section.introduction 
+.hero__container
 	width: 1170px
 	margin: 0 auto
-
-section 
-	padding: 0
-	margin: 0
 
 section 
 	max-width: 1170px
@@ -106,7 +101,7 @@ section
 		padding: 0 25px
 		transition: 0.5s ease
 
-	.intro-content 
+	.hero__items 
 		padding-left: 25px
 
 @media (max-width: 767px) 
@@ -117,15 +112,15 @@ section
 	nav 
 		position: static
 
-	.intro-content 
+	.hero__items 
 		text-align: center
 		width: auto
 		transition: all 1s ease-in-out
 		padding: 0
 
-	.intro-content h1:after 
-		margin: 15px auto
+	.hero__items h1:after 
+		margin: 25px auto
 
-	.intro-content h2 
-		width:  auto
+	.hero__items h2 
+		width: auto
 		margin-top: 25px
