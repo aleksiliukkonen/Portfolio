@@ -2,8 +2,12 @@
 	box-sizing: border-box
 
 body 
-	background-color: $main-color
+	background-color: $mainBlack
 	color: antiquewhite
+
+a 
+	color: $mainGreen
+	text-decoration: none
 
 :root 
 	font-size: 16px
@@ -28,7 +32,28 @@ nav
 	justify-content: space-between
 	align-items: center
 
-#header-image 
+	&__logotype 
+		font-family: 'Rubik Mono One', sans-serif
+		font-size: 2rem
+		color: $mainGreen
+
+	&__btn--green 
+		font-size: 1rem
+		-moz-border-radius: 0.1855em
+		-webkit-border-radius: 0.1855em
+		border-radius: 0.1855em
+		background-color: $mainGreen
+		cursor: pointer
+		color:antiquewhite
+		font-family: 'Rubik Mono One', sans-serif
+		padding: 0.875em 1.5em
+		transition: background-color 1s ease
+
+		&:hover 
+			background-color: darken($mainGreen, 6%)
+			color: antiquewhite
+
+.header-image 
 	background-image: url('../img/bg.jpg')
 	background-repeat: no-repeat
 	background-position: top center
@@ -37,27 +62,6 @@ nav
 	display: flex
 	align-items: center
 	background-attachment: fixed
-
-.logotype 
-	font-family: 'Rubik Mono One', sans-serif
-	font-size: 2rem
-	color: $secondary-color
-
-.btn-green 
-	font-size: 1rem
-	-moz-border-radius: 0.1855em
-	-webkit-border-radius: 0.1855em
-	border-radius: 0.1855em
-	background-color: $secondary-color
-	cursor: pointer
-	color:antiquewhite
-	font-family: 'Rubik Mono One', sans-serif
-	padding: 0.875em 1.5em
-	transition: background-color 1s ease
-
-	&:hover 
-		background-color: darken($secondary-color, 6%)
-		color: antiquewhite
 		
 .intro-content 
 	font-family: 'Montserrat', sans-serif
@@ -77,7 +81,7 @@ h1, h2
 	letter-spacing: 4px
 
 .intro-content h1:after 
-	background-color: $secondary-color
+	background-color: $mainGreen
 	content: ""
 	display: block
 	width: 40px
@@ -109,12 +113,6 @@ section
 
 	:root 
 		font-size: 12px
-		
-	#header-image 
-		background-image: url('../img/bg_mobile.jpg')
-		background-repeat: no-repeat
-		background-position: bottom center
-		background-size: cover
 		
 	nav 
 		position: static
