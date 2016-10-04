@@ -41,17 +41,19 @@ nav
 		font-size: 2rem
 		color: $mainGreen
 
-	&__btn--green 
+	.btn 
 		font-size: 1rem
 		-moz-border-radius: 0.1855em
 		-webkit-border-radius: 0.1855em
 		border-radius: 0.1855em
-		background-color: $mainGreen
 		cursor: pointer
 		color:antiquewhite
 		font-family: 'Rubik Mono One', sans-serif
 		padding: 0.875em 1.5em
 		transition: background-color 1s ease
+
+		&--green 
+			background-color: $mainGreen
 
 		&:hover 
 			background-color: darken($mainGreen, 6%)
@@ -67,7 +69,7 @@ nav
 	align-items: center
 	background-attachment: fixed
 		
-.hero__items 
+.hero__title-container
 	font-family: 'Montserrat', sans-serif
 	text-transform: uppercase
 	font-size: 2.625rem
@@ -101,7 +103,7 @@ section
 		padding: 0 25px
 		transition: 0.5s ease
 
-	.hero__items 
+	.hero__title-container 
 		padding-left: 25px
 
 @media (max-width: 767px) 
@@ -112,15 +114,15 @@ section
 	nav 
 		position: static
 
-	.hero__items 
+	.hero__title-container 
 		text-align: center
 		width: auto
 		transition: all 1s ease-in-out
 		padding: 0
 
-	.hero__items h1:after 
+	.hero__heading:after
 		margin: 25px auto
 
-	.hero__items h2 
+	.hero__paragraph
 		width: auto
 		margin-top: 25px
