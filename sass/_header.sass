@@ -34,6 +34,7 @@ nav
 	margin: 0 auto
 	justify-content: space-between
 	align-items: center
+	padding: 0 20px
 
 	&__logo 
 		font-family: 'Rubik Mono One', sans-serif
@@ -42,8 +43,6 @@ nav
 
 .btn 
 	font-size: 1rem
-	-moz-border-radius: 0.1855em
-	-webkit-border-radius: 0.1855em
 	border-radius: 0.1855em
 	cursor: pointer
 	color:antiquewhite
@@ -55,7 +54,7 @@ nav
 		background-color: $secondary-color
 
 	&:hover 
-		background-color: darken($secondary-color, 6%)
+		background-color: darken($secondary-color, 15%)
 		color: antiquewhite
 
 .hero 
@@ -73,6 +72,7 @@ nav
 	text-transform: uppercase
 	font-size: 2.625rem
 	width: 50%
+	padding-left: 20px
 
 .hero__paragraph
 	font-size: 1.75rem
@@ -91,19 +91,6 @@ nav
 .hero__container
 	width: 1170px
 	margin: 0 auto
-
-section 
-	max-width: 1170px
-	margin: 0 auto
-
-@media (max-width: 1170px) 
-
-	.top-bar 
-		padding: 0 25px
-		transition: 0.5s ease
-
-	.hero__title-container 
-		padding-left: 25px
 
 @media (max-width: 767px) 
 
