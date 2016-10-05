@@ -2,11 +2,11 @@
 	box-sizing: border-box
 
 body 
-	background-color: $mainBlack
+	background-color: $main-color
 	color: antiquewhite
 
 a 
-	color: $mainGreen
+	color: $secondary-color
 	text-decoration: none
 
 h1, h2 
@@ -38,25 +38,25 @@ nav
 	&__logo 
 		font-family: 'Rubik Mono One', sans-serif
 		font-size: 2rem
-		color: $mainGreen
+		color: $secondary-color
 
-	.btn 
-		font-size: 1rem
-		-moz-border-radius: 0.1855em
-		-webkit-border-radius: 0.1855em
-		border-radius: 0.1855em
-		cursor: pointer
-		color:antiquewhite
-		font-family: 'Rubik Mono One', sans-serif
-		padding: 0.875em 1.5em
-		transition: background-color 1s ease
+.btn 
+	font-size: 1rem
+	-moz-border-radius: 0.1855em
+	-webkit-border-radius: 0.1855em
+	border-radius: 0.1855em
+	cursor: pointer
+	color:antiquewhite
+	font-family: 'Rubik Mono One', sans-serif
+	padding: 0.875em 1.5em
+	transition: background-color 1s ease
 
-		&--green 
-			background-color: $mainGreen
+	&--green 
+		background-color: $secondary-color
 
-		&:hover 
-			background-color: darken($mainGreen, 6%)
-			color: antiquewhite
+	&:hover 
+		background-color: darken($secondary-color, 6%)
+		color: antiquewhite
 
 .hero 
 	background-image: url('../img/bg.jpg')
@@ -81,7 +81,7 @@ nav
 	letter-spacing: 4px
 
 .hero__heading:after 
-	background-color: $mainGreen
+	background-color: $secondary-color
 	content: ""
 	display: block
 	width: 40px
