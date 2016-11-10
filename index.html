@@ -8,6 +8,24 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Istok+Web|Montserrat|Rubik+Mono+One" rel="stylesheet">
 	</head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jribbble.min.js"></script>
+	 <script>
+	$.jribbble.setToken('a6106cf897b31aee84b2f1234e0eec9ec7a9c855c74373186ba6966bff1a2bac');
+
+	$.jribbble.users('aleksili').shots({per_page: 6}).then(function(shots) {
+	  var html = [];
+	  
+	  shots.forEach(function(shot) {
+	    html.push('<li class="shots--shot">');
+	    html.push('<a href="' + shot.html_url + '" target="_blank">');
+	    html.push('<img src="' + shot.images.normal + '">');
+	    html.push('</a></li>');
+	  });
+	  
+	  $('.shots').html(html.join(''));
+	});
+  </script>
 
 <body>
 
@@ -66,33 +84,14 @@
 
 		<div class="work-wrapper">
 
-			<div class="about-me">
+			 <ul class="shots">
+			 	
 
-				<p>I have over 6 years of experience in the design field. Designing clean User Interfaces is my goal.  I have good understanding of HTML / CSS and always trying to learn more.</p>
-
-			</div>
-
-			<div class="experience">
-
-				<div class="experience__item">
-					<h2 class="experience__title">Siili Solutions Oy</h2>
-					<h1 class="experience__job">Visual Designer</h1>
-					<p class="experience__time">January 2015 - </p> 
-				</div>
-
-				<div class="experience__item">
-					<h2 class="experience__title">Siili Solutions Oy</h2>
-					<h1 class="experience__job">Visual Designer</h1>
-					<p class="experience__time">January 2015 - </p> 
-				</div>
-
-
-				<a class="experience__linkedin" href="https://fi.linkedin.com/in/aleksi-liukkonen-a16a4a120">VIEW MORE ON LINKEDIN</a>
-
-			</div>
-
+			 </ul>
 
 		</div>
+
+
 	</section>
 
 </body>
