@@ -21,8 +21,10 @@ section.about
   padding-right: 50px
 
   p 
-    font-size: 1.5rem
+    font-size: 2rem
     margin: 0
+    font-family: $secondary-font
+    line-height: 1.5em
 
 .experience__title
   text-transform: uppercase
@@ -43,10 +45,17 @@ section.about
   display: block
 
 @media (max-width: 767px) 
+  
+  .experience
+    margin-top: 40px
 
   .about-wrapper 
-    margin: 20px auto
-    display: block
+    margin: 40px auto
+    flex-direction: column
 
   .experience
     margin-right: 0
+
+  .about-me
+    padding: 0 20px
+    text-align: center
