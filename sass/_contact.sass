@@ -1,9 +1,9 @@
 .contact
-	background: linear-gradient(45deg, rgba(0,0,0,0.03) 45%,rgba(33,189,92,0.09) 100%)
+	background: linear-gradient(45deg, rgba(0,0,0,0.03) 20%,rgba(33,189,92,0.11) 100%)
 	overflow: auto
 
 
-	&-wrapper 
+	&__wrapper 
 		background-image: url('../img/contact_bg.png')
 		background-size: cover
 		background-repeat: no-repeat
@@ -11,7 +11,7 @@
 		padding: 60px 0
 		
 	&__box 
-		background-color: rgba(0,0,0,0.2)
+		background-color: rgba(0,0,0,0.08)
 		border-top: 1px solid rgba(255,255,255,0.085)
 		border-right: 1px solid rgba(255,255,255,0.08)
 		max-width: 920px
@@ -30,9 +30,6 @@
 			margin: 0
 			padding: 0 60px
 
-		.btn
-			margin-top: 30px 
-
 	&__heading 
 		text-align: center
 		text-transform: uppercase
@@ -40,3 +37,40 @@
 		letter-spacing: 4px
 		margin-bottom: 30px
 
+	img
+		width: 50px
+		margin-right: 20px
+
+	span
+		display: block 
+		margin-top: 20px
+		font-size: 1.25rem
+		opacity: 0.6
+		line-height: 1.25em
+
+.contacts
+	display: flex
+	padding: 30px 0
+
+	a 
+		color: $body-color
+
+		&:hover
+			text-decoration: underline
+
+	&__email
+		display: flex
+		align-items: center
+		margin-right: 50px
+
+	&__phone
+		display: flex
+		align-items: center
+
+@media (max-width: 767px) 
+
+	.contacts
+		flex-direction: column
+
+	.contacts__email
+		margin-bottom: 20px
