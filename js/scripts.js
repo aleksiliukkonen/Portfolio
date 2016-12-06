@@ -7,7 +7,7 @@ $.jribbble.users('aleksili').shots({per_page: 6}).then(function(shots) {
   shots.forEach(function(shot) {
     html.push('<li class="shots--shot">');
     html.push('<a href="' + shot.html_url + '" target="_blank">');
-    html.push('<img src="' + shot.images.normal + '">');
+    html.push('<img class="work__item" src="' + shot.images.normal + '">');
     html.push('</a></li>');
   });
   
