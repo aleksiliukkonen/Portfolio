@@ -200,6 +200,8 @@ section.about {
   list-style-type: none; }
   .shots--shot {
     margin-bottom: 60px; }
+  .shots .work__item {
+    max-width: 100%; }
 
 .contact {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 20%, rgba(33, 189, 92, 0.12) 100%);

@@ -1,1 +1,0 @@
-Portfolio by Aleksi Liukkonen
