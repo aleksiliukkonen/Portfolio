@@ -3,12 +3,17 @@
 
 body 
 	background-color: $main-color
-	color: antiquewhite
+	color: $body-color
 	font-family: $secondary-font
 
 a 
 	color: $secondary-color
 	text-decoration: none
+	transition: all 0.3s ease-in-out
+
+	&:hover
+		color: darken($secondary-color, 15%)
+
 
 h1, h2 
 	margin: 0
@@ -47,16 +52,17 @@ nav
 	display: inline-block
 	border-radius: 0.1855em
 	cursor: pointer
-	color:antiquewhite
-	font-family: $main-font
 	padding: 0.875em 1.5em
 	transition: background-color 1s ease
+
+	a
+		color: $body-color
 
 	&--green 
 		background-color: $secondary-color
 
 	&:hover 
-		background-color: darken($secondary-color, 15%)
+		background-color: darken($secondary-color, 10%)
 		color: antiquewhite
 
 .hero 
