@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #111;
+  color: antiquewhite;
+  font-family: "Montserrat", sans-serif; }
+
+a {
+  color: #21bd5c;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
+  a:hover {
+    color: #167c3c; }
+
+h1, h2 {
+  margin: 0;
+  padding: 0; }
+
+:root {
+  font-size: 16px; }
+
+header {
+  position: relative; }
+
+nav {
+  background-color: rgba(17, 17, 17, 0.5);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.top-bar {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  width: 100%;
+  height: 6.25em;
+  margin: 0 auto;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20px; }
+  .top-bar__logo {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 2rem;
+    color: #21bd5c; }
+
+.btn {
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 0.1855em;
+  cursor: pointer;
+  padding: 0.875em 1.5em;
+  transition: background-color 1s ease; }
+  .btn a {
+    color: antiquewhite; }
+  .btn--green {
+    background-color: #21bd5c; }
+  .btn:hover {
+    background-color: #199247;
+    color: antiquewhite; }
+
+.hero {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  background-attachment: fixed; }
+
+.hero__title-container {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.625rem;
+  width: 50%;
+  padding-left: 20px; }
+
+.hero__paragraph {
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 4px; }
+
+.hero__heading:after {
+  background-color: #21bd5c;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin: 35px 0; }
+
+.hero__container {
+  width: 1170px;
+  margin: 0 auto; }
+
+@media (max-width: 767px) {
+  :root {
+    font-size: 11px; }
+  .hero__title-container {
+    text-align: center;
+    width: auto;
+    transition: all 1s ease-in-out;
+    padding: 0; }
+  .hero__heading:after {
+    margin: 25px auto; }
+  .hero__paragraph {
+    width: auto;
+    margin-top: 25px; }
+  .hero {
+    background-attachment: scroll;
+    -ms-flex-align: end;
+    -ms-grid-row-align: flex-end;
+    align-items: flex-end; }
+  .hero__container {
+    margin-bottom: 80px; } }
+
+section.about {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 25%, rgba(99, 99, 99, 0.25) 100%);
+  overflow: auto; }
+
+.about-wrapper {
+  max-width: 1170px;
+  margin: 60px auto;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px; }
+
+.experience {
+  -ms-flex: 1;
+  flex: 1; }
+  .experience__item {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px; }
+
+.about-me {
+  -ms-flex: 2;
+  flex: 2;
+  padding-right: 50px; }
+  .about-me p {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5em; }
+  .about-me a {
+    text-decoration: underline; }
+
+.experience__title {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #21bd5c;
+  margin-bottom: 5px; }
+
+.experience__job {
+  font-size: 2.125rem;
+  margin-bottom: 5px; }
+
+.experience__time {
+  margin: 0;
+  opacity: 0.6; }
+
+.experience__linkedin {
+  text-align: center;
+  display: block; }
+
+@media (max-width: 767px) {
+  .experience {
+    margin-top: 40px; }
+  .about-wrapper {
+    margin: 40px auto;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .experience {
+    margin-right: 0; }
+  .about-me {
+    padding: 0 20px;
+    text-align: center; } }
+
+.work {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 25%, rgba(99, 99, 99, 0.25) 100%);
+  overflow: auto; }
+  .work-wrapper {
+    margin: 40px auto;
+    padding: 40px; }
+
+.shots {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 0;
+  list-style-type: none; }
+  .shots--shot {
+    margin-bottom: 60px; }
+
+.contact {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 20%, rgba(33, 189, 92, 0.12) 100%);
+  overflow: auto; }
+  .contact__wrapper {
+    background-image: url("../img/contact_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 60px 0; }
+  .contact__box {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.085);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    max-width: 920px;
+    padding: 60px 0;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .contact__box p {
+      font-size: 2rem;
+      line-height: 1.5em;
+      text-align: center;
+      display: block;
+      margin: 0;
+      padding: 0 60px; }
+  .contact__heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.125rem;
+    letter-spacing: 4px;
+    margin-bottom: 30px; }
+  .contact img {
+    width: 50px;
+    margin-right: 20px; }
+  .contact span {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    opacity: 0.6;
+    line-height: 1.25em; }
+
+.contacts {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0; }
+  .contacts a {
+    color: antiquewhite; }
+    .contacts a:hover {
+      text-decoration: underline; }
+  .contacts__email {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 50px; }
+  .contacts__phone {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center; }
+
+@media (max-width: 767px) {
+  .contacts {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .contacts__email {
+    margin-bottom: 20px; } }
