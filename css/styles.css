@@ -115,7 +115,6 @@ nav {
   .hero {
     background-attachment: scroll;
     -ms-flex-align: end;
-    -ms-grid-row-align: flex-end;
     align-items: flex-end; }
   .hero__container {
     margin-bottom: 80px; } }
@@ -204,7 +203,7 @@ section.about {
     max-width: 100%; }
 
 .contact {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 20%, rgba(33, 189, 92, 0.12) 100%);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 20%, rgba(33, 189, 92, 0.16) 100%);
   overflow: auto; }
   .contact__wrapper {
     background-image: url("../img/contact_bg.png");
